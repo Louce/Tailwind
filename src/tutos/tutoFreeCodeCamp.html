@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/output.css"/>
+        <title>Tuto Guillaume Duhan - Free Code Camp</title>
+    </head>
+    <body class="p-4">
+        <h2 class="mb-4 font-bold text-3xl">Sizing and Flex</h2>
+
+        <section class="border-2 mb-4 p-4 border-gray-600">
+            <div class="flex max-w-xl min-h-screen space-x-2">
+                <div class="w-1/5 rounded-lg bg-teal-400 min-h-screen p-2 font-bold text-white">Sidebar</div>
+                <div class="w-3/5 rounded-lg bg-pink-300 p-2 text-white font-bold">Main content</div>
+                <div class="w-1/5 rounded-lg bg-orange-300 p-2 text-white font-bold">Sidebar</div>
+            </div>
+        </section>
+
+        <section class="border-2 mb-4 p-4 border-gray-600">
+            <div class="flex-row space-y-2 parent ">
+                <div class="p-2 bg-teal-400 rounded-lg">Header</div>
+                <div class="flex flex-col xxs:space-y-2 md:space-y-0 md:flex-row md:space-x-2 ">
+                    <div class="p-2 md:w-32 bg-pink-300 rounded-lg">Sidebar</div>
+                    <div class="w-full p-2  bg-green-300 rounded-lg">Main content</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-2 mb-4 p-4 border-gray-600">
+            <div class="flex-row space-y-2 parent ">
+                <div class="p-2 bg-teal-400 rounded-lg">Header</div>
+                <div class="flex flex-col xs:space-y-2 md:space-y-0 md:flex-row md:space-x-2 ">
+                    <div class="p-2 md:w-32 bg-pink-300 rounded-lg">Sidebar</div>
+                    <div class="w-full p-2  bg-green-300 rounded-lg">Main content</div>
+                    <div class="flex-col basis-2/12 bg-orange-300 rounded-lg ">
+                        <div class="p-2 ">Sidebar</div>
+                        <div class="p-2">Menu</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-2 p-4 mb-4 border-gray-600 space-y-2">
+            <div class="p-2 bg-orange-300 rounded-lg">Header nowrap</div>
+            <div class="flex flex-col md:flex-row mb-4">
+                <div class="flex flex-nowrap w-full space-x-2">
+                    <div class="w-full grow bg-violet-400 p-2 rounded-lg">01</div>
+                    <div class="w-full grow bg-violet-400 p-2 rounded-lg">02</div>
+                    <div class="w-full grow bg-violet-400 p-2 rounded-lg">03</div>
+                    <div class="w-full grow bg-violet-400 p-2 rounded-lg">04</div>
+                    <div class="w-full grow bg-violet-400 p-2 rounded-lg">05</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-2 p-4 mb-4 border-gray-600 space-y-2">
+            <div class="p-2 bg-orange-300 rounded-lg">Header wrap</div>
+            <div class="flex flex-col md:flex-row">
+                <div class="flex flex-wrap w-full">
+                    <div class="w-32 mr-2 mb-2 grow bg-violet-400 p-2 rounded-lg">01</div>
+                    <div class="w-32 mr-2 mb-2 grow bg-violet-400 p-2 rounded-lg">02</div>
+                    <div class="w-32 mr-2 mb-2 grow bg-violet-400 p-2 rounded-lg">03</div>
+                    <div class="w-32 mr-2 mb-2 grow bg-violet-400 p-2 rounded-lg">04</div>
+                    <div class="w-32 mr-2 mb-2 grow bg-violet-400 p-2 rounded-lg">05</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-2 mb-4 p-4 border-gray-600">
+            <h3 class="text-xl font-bold p-2">Justify-content</h3>
+            <div class="parent">
+                <div class="p-2 mb-2 bg-teal-400 rounded-lg">Header</div>
+                <div class="flex justify-evenly items-end space-x-2">
+                    <div class="p-2 bg-pink-300 rounded-lg">Sidebar</div>
+                    <div class="p-2  bg-green-300 rounded-lg">
+                        <h1 class="font-bold">Main content</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, labore? Minus saepe animi labore atque inventore neque, vel rerum consequuntur ea, quisquam officia nulla corrupti fugiat repudiandae qui pariatur sunt?</p>
+                    </div>
+                    <div class="p-2 bg-pink-300 rounded-lg">Sidebar</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-2 mb-16 p-4 border-gray-600">
+            <h3 class="text-xl font-bold p-2">Align-items</h3>
+            <div class="parent">
+                <div class="p-2 mb-2 bg-teal-400 rounded-lg">Header</div>
+                <div class="flex items-baseline space-x-2 ">
+                    <div class="pt-2 pb-6 w-full text-center font-bold text-white bg-violet-400 p-2 rounded-lg">01</div>
+                    <div class="pt-8 pb-12 w-full text-center font-bold text-white bg-violet-400 p-2 rounded-lg">02</div>
+                    <div class="pt-12 pb-4 w-full text-center font-bold text-white bg-violet-400 p-2 rounded-lg">03</div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="mb-4 font-bold text-3xl">Grid</h2>
+
+        <section class="border-2 mb-4 p-4 border-gray-600">
+            <h3 class="text-xl font-bold p-2">Columns & col-span</h3>
+            <div class="container max-auto">
+                <div class="grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="bg-violet-400 p-6 rounded-lg">1</div>
+                    <div class="bg-orange-300 p-6 rounded-lg col-span-3">2</div>
+                    <div class="bg-violet-400 p-6 rounded-lg">3</div>
+                    <div class="bg-pink-300 p-6 rounded-lg col-span-2">4</div>
+                    <div class="bg-violet-400 p-6 rounded-lg">5</div>
+                    <div class="bg-green-300 p-6 rounded-lg col-span-4">6</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-2 mb-4 p-4 border-gray-600">
+            <h3 class="text-xl font-bold p-2">col-start & col-end</h3>
+            <div class="container max-auto">
+                <div class="grid grid-cols-6 gap-4">
+                    <div class="bg-violet-400 p-6 rounded-lg col-start-2 col-span-4">1</div>
+                    <div class="bg-orange-300 p-6 rounded-lg col-start-1 col-end-3">2</div>
+                    <div class="bg-teal-300 p-6 rounded-lg col-end-7 col-span-2">3</div>
+                    <div class="bg-pink-300 p-6 rounded-lg col-start-1 col-end-7">4</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-2 mb-4 p-4 border-gray-600">
+            <h3 class="text-xl font-bold p-2">Rows & grid-flow + row-span</h3>
+            <div class="container max-auto">
+                <div class="grid grid-rows-4 grid-flow-col gap-4">
+                    <div class="bg-violet-400 p-6 rounded-lg row-span-2">1</div>
+                    <div class="bg-orange-300 p-6 rounded-lg ">2</div>
+                    <div class="bg-violet-400 p-6 rounded-lg ">3</div>
+                    <div class="bg-pink-300 p-6 rounded-lg ">4</div>
+                    <div class="bg-violet-400 p-6 rounded-lg row-start-4">5</div>
+                    <div class="bg-teal-300 p-6 rounded-lg row-span-3">6</div>
+                    <div class="bg-violet-400 p-6 rounded-lg ">7</div>
+                    <div class="bg-green-300 p-6 rounded-lg ">8</div>
+                    <div class="bg-violet-400 p-6 rounded-lg ">9</div>
+                    <div class="bg-orange-300 p-6 rounded-lg row-span-4">10</div>
+                    <div class="bg-violet-400 p-6 rounded-lg ">11</div>
+                    <div class="bg-pink-300 p-6 rounded-lg ">12</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-2 mb-16 p-4 border-gray-600">
+            <h3 class="text-xl font-bold p-2">grid-flow-row-dense</h3>
+            <div class="container max-auto">
+                <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3 gap-4">
+                    <div class="bg-violet-400 p-6 rounded-lg col-span-2">1</div>
+                    <div class="bg-orange-300 p-6 rounded-lg col-span-2">2</div>
+                    <div class="bg-violet-400 p-6 rounded-lg">3</div>
+                    <div class="bg-pink-300 p-6 rounded-lg ">4</div>
+                    <div class="bg-violet-400 p-6 rounded-lg">5</div>
+                    <div class="bg-teal-300 p-6 rounded-lg col-span-2">6</div>
+                    <div class="bg-violet-400 p-6 rounded-lg">7</div>
+                    <div class="bg-green-300 p-6 rounded-lg">8</div>
+                    <div class="bg-violet-400 p-6 rounded-lg">9</div>
+                    <div class="bg-orange-300 p-6 rounded-lg col-span-2">10</div>
+                    <div class="bg-violet-400 p-6 rounded-lg">11</div>
+                    <div class="bg-pink-300 p-6 rounded-lg">12</div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="mb-4 font-bold text-3xl">Layouts</h2>
+        <h3 class="text-xl font-bold p-2">Container: columns + break-after-column</h3>
+        <div class="container p-4 columns-3 border-2 mb-4 border-gray-600">
+            <img src="../img/img.jpg" alt="illustration" class="rounded-lg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, itaque impedit recusandae sapiente amet illum repellendus molestias beatae dicta odit eaque ab expedita autem natus suscipit dolorum! Similique, id nostrum?</p>
+            <p class="break-after-column">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae itaque praesentium modi commodi earum omnis saepe id aspernatur nostrum impedit sint nemo, corrupti eveniet? Rerum quod laboriosam tempora voluptates?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A excepturi consectetur ducimus modi soluta placeat expedita laborum, nisi officia, laboriosam voluptas. Rem expedita atque nam blanditiis fugit excepturi sunt ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae itaque praesentium modi commodi earum omnis saepe id aspernatur nostrum impedit sint nemo, corrupti eveniet? Rerum quod laboriosam tempora voluptates?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae itaque praesentium modi commodi earum omnis saepe id aspernatur nostrum impedit sint nemo, corrupti eveniet? Rerum quod laboriosam tempora voluptates?</p>
+        </div>
+
+        <div class="container p-4 border-2 mb-4 border-gray-600">
+            <h3 class="text-xl font-bold p-2">Container: float & clear</h3>
+            <img src="../img/img.jpg" alt="illustration" class="rounded-lg float-left w-52 m-2">
+            <img src="../img/img.jpg" alt="illustration" class="rounded-lg float-right w-32 m-2">
+            <p class="clear-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, itaque impedit recusandae sapiente amet illum repellendus molestias beatae dicta odit eaque ab expedita autem natus suscipit dolorum! Similique, id nostrum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A excepturi consectetur ducimus modi soluta placeat expedita laborum, nisi officia, laboriosam voluptas. Rem expedita atque nam blanditiis fugit excepturi sunt ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae itaque praesentium modi commodi earum omnis saepe id aspernatur nostrum impedit sint nemo, corrupti eveniet? Rerum quod laboriosam tempora voluptates?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae itaque praesentium modi commodi earum omnis saepe id aspernatur nostrum impedit sint nemo, corrupti eveniet? Rerum quod laboriosam tempora voluptates?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae itaque praesentium modi commodi earum omnis saepe id aspernatur nostrum impedit sint nemo, corrupti eveniet? Rerum quod laboriosam tempora voluptates?</p>
+        </div>
+
+        <div class="container p-4 border-2 mb-4 border-gray-600">
+            <h3 class="text-xl font-bold p-2">Positions absolute & relative</h3>
+            <div class="parent relative bg-pink-300 rounded-lg h-32 w-32 p-8">
+                <div class="w-24 h-24 bg-green-300 rounded-lg p-4 absolute inset-2"></div>
+                <div class="w-12 h-12 bg-orange-300 rounded-lg p-4 absolute -top-2 -left-2"></div>
+            </div>
+        </div>
+
+        <section class="border-2 mb-4 border-gray-600">
+            <h3 class="text-xl font-bold p-2">Overflow visible/hidden</h3>
+            <div class="relative rounded-xl overflow-auto p-8">
+                <div class="overflow-visible relative max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6">
+                    <img class="absolute -left-6 w-24 h-24 rounded-full shadow-lg" src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80">
+                    <div class="flex flex-col py-5 pl-24">
+                        <strong class="text-slate-900 text-sm font-medium">Andrew Alfred</strong>
+                        <span class="text-slate-500 text-sm font-medium">Technical advisor</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative rounded-xl overflow-auto p-8">
+                <div class="overflow-hidden relative max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6">
+                    <img class="absolute -left-6 w-24 h-24 rounded-full shadow-lg" src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80">
+                    <div class="flex flex-col py-5 pl-24">
+                        <strong class="text-slate-900 text-sm font-medium">Andrew Alfred</strong>
+                        <span class="text-slate-500 text-sm font-medium">Technical advisor</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-2 mb-4 border-gray-600 p-4">
+            <h3 class="text-xl font-bold p-2">Overflow auto/scroll</h3>
+            <div class="overflow-auto max-h-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sit maxime distinctio sint quas, rerum at, error, aut numquam facilis fugiat! Et tempore necessitatibus vel veritatis ullam, nesciunt beatae minima, soluta facere temporibus minus saepe harum delectus sunt, doloremque quis! At ea vitae quo doloribus totam odit eveniet magni consequatur illo nesciunt ipsa pariatur quia hic distinctio, quidem dolores nihil. Quo optio quidem facilis accusantium pariatur? Nemo voluptatem atque ipsum corrupti odio, enim nesciunt dignissimos, et dolorum pariatur quas nobis dolorem, quasi repudiandae. Est, nostrum, ducimus, quod quis eveniet vitae commodi voluptatibus assumenda ipsum exercitationem sint ad sunt quos temporibus aperiam reiciendis enim cumque voluptatum iure excepturi iusto? Odio nisi error eaque nostrum consectetur! Reprehenderit error aut vero itaque! Blanditiis voluptate veniam laborum, maxime nesciunt sapiente animi nisi numquam, consequuntur molestias placeat excepturi quod magnam repudiandae iure enim neque ea est? Ratione ex perspiciatis eius similique natus consectetur ullam magni? Consectetur fuga perferendis inventore fugit voluptas doloribus distinctio incidunt. Nam reiciendis inventore in nisi modi cupiditate minima, placeat quidem doloribus laboriosam ea? Veniam, tempora molestias ratione ea praesentium repellat fuga adipisci, dicta, est sapiente voluptatum officia! Maiores quia cupiditate eligendi ducimus obcaecati maxime, tempore autem cum itaque. Beatae, laborum et? Laborum, doloribus iusto? Nulla ducimus incidunt, eius doloremque expedita itaque nihil laborum minima possimus maiores tempora! Consequatur quisquam sed, nulla modi odit, hic magnam porro minima in optio praesentium, dolorum tempora molestiae ea ex similique quo! Nisi, magnam eaque. Vitae cumque quis nobis ducimus unde saepe, dolores exercitationem consequatur obcaecati quas laboriosam qui maxime vero culpa ipsum dignissimos, suscipit optio! Facilis, quae! Eveniet doloremque fugiat iusto dicta? Cumque corporis veritatis corrupti quisquam minima! Eveniet ad incidunt excepturi accusamus commodi. Dolorem quam voluptates dolorum ipsa amet nesciunt in quasi hic, distinctio nam animi sapiente fuga obcaecati illum impedit molestiae suscipit sint, corporis assumenda. Laudantium, quis earum, perferendis numquam amet molestias repellendus ea possimus sapiente libero perspiciatis voluptatibus hic corrupti temporibus at ipsa? Sapiente laudantium consectetur quam minus eius eum ad repellat cumque cum quidem itaque, provident omnis perspiciatis aspernatur odit architecto dolore vitae sit totam, alias deleniti eaque dolores. Atque consequuntur, earum blanditiis repellat ea facilis tempora quaerat, delectus vel nobis maiores nemo expedita! Velit quo numquam veniam eveniet, placeat optio a laboriosam ab libero, eum ex minus ducimus ipsa atque soluta quidem omnis consequatur perspiciatis consequuntur! Ipsam nemo delectus recusandae aliquid doloremque? Tempora debitis minima, necessitatibus animi quibusdam inventore unde rem fugit tenetur voluptatum? Perferendis officia maxime quis dolore minima accusamus iusto numquam ex nam voluptatem nisi tenetur, a quia, ipsam eius maiores expedita? Dolorum maxime blanditiis delectus quibusdam odio, quisquam similique explicabo error sint placeat autem asperiores quas molestiae eaque corporis quod ex repellendus dolor, iusto qui natus facilis animi atque alias! Enim blanditiis laborum itaque excepturi, atque et. Quas ipsam cupiditate hic expedita recusandae possimus optio similique maxime odio, ab cumque suscipit porro autem corporis fuga eligendi sequi sunt error, ut, ex sit dolorum vel quod pariatur! Recusandae dolorem, aliquam fugit officiis animi incidunt minus. Ratione, incidunt est?</div>
+        </section>
+
+        <section class="border-2 mb-4 border-gray-600 p-4">
+            <h3 class="text-xl font-bold p-2">Visibility: invisible</h3>
+            <div class="container mb-4 p-4 border border-gray-200 shadow-lg rounded-lg">
+                <div class="grid grid-cols-3 gap-4 ">
+                    <div class="bg-orange-300 rounded-lg p-4">01</div>
+                    <div class="bg-pink-300 rounded-lg p-4 invisible">02</div>
+                    <div class="bg-orange-300 rounded-lg p-4">03</div>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-bold p-2">Display: hidden</h3>
+            <div class="container p-4 border border-gray-200 shadow-lg rounded-lg">
+                <div class="grid grid-cols-3 gap-4 ">
+                    <div class="bg-orange-300 rounded-lg p-4">01</div>
+                    <div class="bg-pink-300 rounded-lg p-4 hidden">02</div>
+                    <div class="bg-orange-300 rounded-lg p-4">03</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-2 mb-4 border-gray-600 p-4">
+            <h3 class="text-xl font-bold p-2">Z-index</h3>
+            <div class="container relative p-4 border border-gray-200 shadow-lg rounded-lg w-full h-24">
+                <div class="absolute z-40 w-12 bg-violet-400 rounded-lg p-2 m-2">05</div>
+                <div class="absolute z-30 w-24 bg-green-300 rounded-lg p-2 m-2 text-end">04</div>
+                <div class="absolute z-20 w-36 bg-orange-300 rounded-lg p-2 m-2 text-end">03</div>
+                <div class="absolute z-10 w-48 bg-pink-300 rounded-lg p-2 m-2 text-end">02</div>
+                <div class="absolute z-1 w-60 bg-teal-400 rounded-lg p-2 m-2 text-end">01</div>
+            </div>
+        </section>
+
+        <section class="border-2 mb-4 border-gray-600 p-4">
+            <h3 class="text-xl font-bold p-2">Object-position</h3>
+            <div class="grid grid-cols-3 gap-4">
+                <img src="../img/img.jpg" alt="illustration" class="rounded-lg h-56 w-56 object-none object-top">
+                <img src="../img/img.jpg" alt="illustration" class="rounded-lg h-56 w-56 object-none object-center">
+                <img src="../img/img.jpg" alt="illustration" class="rounded-lg h-56 w-56 object-none object-bottom">
+            </div>
+        </section>
+    </body>
+</html>
