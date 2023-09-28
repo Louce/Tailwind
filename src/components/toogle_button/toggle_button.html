@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/output.css">
+        <link rel="stylesheet" href="toggle_button.css">
+        <script src="toggle_button.js" defer></script>
+    </head>
+    <body class="flex justify-center items-center 
+        h-screen m-0 
+        bg-beige">
+        <label class="relative 
+            w-20 h-10 
+            bg-white 
+            border-2 border-yellow-700 rounded-full 
+            overflow-hidden cursor-pointer">
+
+            <input type="checkbox" id="toggleCheckbox" class="hidden">
+
+            <span 
+            class="slider
+            absolute top-1/2 left-5px
+            w-30 h-30
+            -translate-y-1/2 duration-300
+            bg-inactif
+            rounded-full shadow"
+            ></span>
+        </label>
+    </body>
+</html>
