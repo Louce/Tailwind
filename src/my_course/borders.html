@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/output.css"/>
+        <title>Tailwind - Borders</title>
+    </head>
+    <body class="m-8">
+        <main class="border-2 mb-4 border-gray-600 p-4">
+
+            <h1 class="text-xl font-bold p-2">Borders</h1>
+
+            <p class="p-4 mb-4 border-4 border-dotted border-yellow-400">Coucou petite perruche</p>
+
+            <div class="mb-4">
+                <label for="border">Border outline-none</label>
+                <input type="text" id="border" class="outline-none border-2 border-pink-500 focus:border-orange-500 rounded-full px-4 py-1 mb-4">
+            </div>
+
+            <div class="mb-4">
+                <label for="ring">Border + outline-offset-4 + Ring-offset-8
+                </label>
+                <input type="text" id="ring" class="border-2 border-orange-500 ring-offset-8 ring-4 ring-pink-500  focus:ring-teal-500 outline-1 outline-offset-4 outline-emerald-300 rounded-full px-4 ml-4 mb-4">
+            </div>
+
+            <div class="mb-4">
+                <label for="ring">Border + Outline
+                </label>
+                <input type="text" id="ring" class="border outline-violet-300 outline-offset-4 rounded-full px-4 py-1 ml-4">
+            </div>
+
+        </main>
+    </body>
+</html>

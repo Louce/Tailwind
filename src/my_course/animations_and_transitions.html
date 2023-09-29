@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/output.css"/>
+        <title>Tailwind - Animations and Transitions</title>
+</head>
+<body class="p-8">
+
+    <main class="border-2 mb-4 mx-auto border-gray-600 p-4 w-1/2">
+
+        <h1 class="text-xl font-bold p-2">Animations & Transitions</h1>
+
+        <h2 class="text-l font-bold p-2">Translate + transition delay + duration</h2>
+        <div class="w-64 p-4 mx-auto mb-8 text-black bg-white border rounded-lg shadow-xl shadow-gray-400">
+            <img src="../img/img.jpg" alt="" class="mb-4 ">
+            <h1 class="text-2xl">Hello World</h1>
+            <p class="mb-4">This is my tutoriel</p>
+            <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300 shadow-lg translate-y-0 delay-500 duration-500 hover:-translate-y-2 ">Say Hello</button>
+        </div>
+
+        <h2 class="text-l font-bold p-2">Ease-in-out + création class:duration-2000 (tailwind.config.js)</h2>
+        <div class="w-24 h-24 mb-8 mx-auto bg-violet-400 rounded-lg ease-in-out duration-2000 hover:w-48 hover:h-48 hover:bg-teal-300"></div>
+
+        <h2 class="text-l font-bold p-2">Animation: animate-spin</h2>
+        <div class="w-64 p-4 mx-auto mb-8 text-black bg-white border rounded-lg shadow-xl shadow-gray-400">
+            <button class="inline-flex items-center justify-center px-4 py-2 font-bold text-sm shadow rounded-md text-white bg-teal-500 cursor-default">
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Processing...</button>
+        </div>
+
+        <h2 class="text-l font-bold p-2">Animation: animate-ping</h2>
+        <div class="relative w-64 p-4 mb-8 mx-auto text-black bg-white border rounded-lg shadow-xl shadow-gray-400">
+            <div class="absolute -top-1.5 -right-1.5 w-5 h-5 bg-orange-200 rounded-full animate-ping"></div>
+            <div class="absolute -top-1.5 -right-1.5 w-5 h-5 bg-orange-400 rounded-full"></div>
+            <h1 class="text-2xl">Hello World</h1>
+            <p class="mb-4">You have a new message</p>
+        </div>
+
+        <h2 class="text-l font-bold p-2">Animation: animate-pulse</h2>
+        <div class="border border-gray-300 shadow rounded-md p-4 mb-8 max-w-sm w-full mx-auto">
+            <div class="animate-pulse flex space-x-4">
+                <div class="rounded-full bg-slate-200 h-10 w-10"></div>
+                <div class="flex-1 space-y-6 py-1">
+                    <div class="h-2 bg-slate-200 rounded"></div>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="h-2 bg-slate-200 rounded col-span-2"></div>
+                            <div class="h-2 bg-slate-200 rounded col-span-1"></div>
+                        </div>
+                        <div class="h-2 bg-slate-200 rounded"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-l font-bold p-2">Animation: animate-bounce</h2>
+        <div class="relative w-64 p-6 pb-2 mx-auto mb-8 text-black bg-white border rounded-lg shadow-xl shadow-gray-400">
+           <div class="h-12 w-12 mx-auto bg-pink-400 rounded-full animate-bounce text-center text-white text-4xl font-bold ">&#x2193;</div>
+        </div>
+
+        <h2 class="text-l font-bold p-2">Scale</h2>
+        <div class="w-64 p-4 mx-auto mb-8 text-black bg-white border rounded-lg shadow-xl shadow-gray-400">
+            <img src="../img/img.jpg" alt="" class="mb-4 hover:scale-105 transition ease-in-out">
+            <h1 class="text-2xl">Hello World</h1>
+            <p class="mb-4">This is my tutoriel</p>
+            <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300 shadow-lg">Say Hello</button>
+        </div>
+
+        <h2 class="text-l font-bold p-2">Rotate</h2>
+        <div class="w-64 p-4 mx-auto mb-8 text-black bg-white border rounded-lg shadow-xl shadow-gray-400">
+            <img src="../img/img.jpg" alt="" class="mb-4 hover:rotate-180 transition duration-500 ease-in-out">
+            <h1 class="text-2xl">Hello World</h1>
+            <p class="mb-4">This is my tutoriel</p>
+            <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300 shadow-lg">Say Hello</button>
+        </div>
+
+        <h2 class="text-l font-bold p-2">Transform Origin</h2>
+        <div class="relative w-64 p-4 mb-8 mx-auto text-black bg-white border rounded-lg shadow-xl shadow-gray-400 origin-top-left hover:rotate-12 duration-500">
+            <div class="absolute -top-2 -left-1.5 w-5 h-5 bg-yellow-600 rounded-full"></div>
+            <h1 class="text-2xl">Hello World</h1>
+            <p class="mb-4">You have a new message</p>
+        </div>
+
+        <h2 class="text-l font-bold p-2">Skew</h2>
+        <div class="w-64 p-4 mx-auto mb-8 text-black bg-white border rounded-lg shadow-xl shadow-gray-400">
+            <img src="../img/img.jpg" alt="" class="mb-4 hover:-skew-y-6 transition duration-500 ease-in-out">
+            <h1 class="text-2xl">Hello World</h1>
+            <p class="mb-4">This is my tutoriel</p>
+            <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300 shadow-lg">Say Hello</button>
+        </div>
+    </main>
+</body>
+</html>

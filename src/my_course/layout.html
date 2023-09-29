@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/output.css"/>
+        <title>Tailwind - Layout</title>
+    </head>
+    <body class="m-8">
+
+        <main>
+            <h1 class="mb-4 font-bold text-3xl">Layouts</h1>
+
+            <h2 class="text-xl font-bold p-2">Container: columns + break-after-column</h2>
+            <div class="container p-4 columns-3 border-2 mb-4 border-gray-600">
+                <img src="../img/img.jpg" alt="illustration" class="rounded-lg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, itaque impedit recusandae sapiente amet illum repellendus molestias beatae dicta odit eaque ab expedita autem natus suscipit dolorum! Similique, id nostrum?</p>
+                <p class="break-after-column">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae itaque praesentium modi commodi earum omnis saepe id aspernatur nostrum impedit sint nemo, corrupti eveniet? Rerum quod laboriosam tempora voluptates?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A excepturi consectetur ducimus modi soluta placeat expedita laborum, nisi officia, laboriosam voluptas. Rem expedita atque nam blanditiis fugit excepturi sunt ea?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae itaque praesentium modi commodi earum omnis saepe id aspernatur nostrum impedit sint nemo, corrupti eveniet? Rerum quod laboriosam tempora voluptates?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae itaque praesentium modi commodi earum omnis saepe id aspernatur nostrum impedit sint nemo, corrupti eveniet? Rerum quod laboriosam tempora voluptates?</p>
+            </div>
+
+            <div class="container p-4 border-2 mb-4 border-gray-600">
+                <h2 class="text-xl font-bold p-2">Container: float & clear</h2>
+                <img src="../img/img.jpg" alt="illustration" class="rounded-lg float-left w-52 m-2">
+                <img src="../img/img.jpg" alt="illustration" class="rounded-lg float-right w-32 m-2">
+                <p class="clear-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, itaque impedit recusandae sapiente amet illum repellendus molestias beatae dicta odit eaque ab expedita autem natus suscipit dolorum! Similique, id nostrum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A excepturi consectetur ducimus modi soluta placeat expedita laborum, nisi officia, laboriosam voluptas. Rem expedita atque nam blanditiis fugit excepturi sunt ea?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae itaque praesentium modi commodi earum omnis saepe id aspernatur nostrum impedit sint nemo, corrupti eveniet? Rerum quod laboriosam tempora voluptates?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae itaque praesentium modi commodi earum omnis saepe id aspernatur nostrum impedit sint nemo, corrupti eveniet? Rerum quod laboriosam tempora voluptates?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae itaque praesentium modi commodi earum omnis saepe id aspernatur nostrum impedit sint nemo, corrupti eveniet? Rerum quod laboriosam tempora voluptates?</p>
+            </div>
+
+            <div class="container p-4 border-2 mb-4 border-gray-600">
+                <h2 class="text-xl font-bold p-2">Positions absolute & relative</h2>
+                <div class="parent relative bg-pink-300 rounded-lg h-32 w-32 p-8">
+                    <div class="w-24 h-24 bg-green-300 rounded-lg p-4 absolute inset-2"></div>
+                    <div class="w-12 h-12 bg-orange-300 rounded-lg p-4 absolute -top-2 -left-2"></div>
+                </div>
+            </div>
+
+            <section class="border-2 mb-4 border-gray-600">
+                <h2 class="text-xl font-bold p-2">Overflow visible/hidden</h2>
+                <div class="relative rounded-xl overflow-auto p-8">
+                    <div class="overflow-visible relative max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6">
+                        <img class="absolute -left-6 w-24 h-24 rounded-full shadow-lg" src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80">
+                        <div class="flex flex-col py-5 pl-24">
+                            <strong class="text-slate-900 text-sm font-medium">Andrew Alfred</strong>
+                            <span class="text-slate-500 text-sm font-medium">Technical advisor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative rounded-xl overflow-auto p-8">
+                    <div class="overflow-hidden relative max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6">
+                        <img class="absolute -left-6 w-24 h-24 rounded-full shadow-lg" src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80">
+                        <div class="flex flex-col py-5 pl-24">
+                            <strong class="text-slate-900 text-sm font-medium">Andrew Alfred</strong>
+                            <span class="text-slate-500 text-sm font-medium">Technical advisor</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="border-2 mb-4 border-gray-600 p-4">
+                <h2 class="text-xl font-bold p-2">Overflow auto/scroll</h2>
+                <div class="overflow-auto max-h-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sit maxime distinctio sint quas, rerum at, error, aut numquam facilis fugiat! Et tempore necessitatibus vel veritatis ullam, nesciunt beatae minima, soluta facere temporibus minus saepe harum delectus sunt, doloremque quis! At ea vitae quo doloribus totam odit eveniet magni consequatur illo nesciunt ipsa pariatur quia hic distinctio, quidem dolores nihil. Quo optio quidem facilis accusantium pariatur? Nemo voluptatem atque ipsum corrupti odio, enim nesciunt dignissimos, et dolorum pariatur quas nobis dolorem, quasi repudiandae. Est, nostrum, ducimus, quod quis eveniet vitae commodi voluptatibus assumenda ipsum exercitationem sint ad sunt quos temporibus aperiam reiciendis enim cumque voluptatum iure excepturi iusto? Odio nisi error eaque nostrum consectetur! Reprehenderit error aut vero itaque! Blanditiis voluptate veniam laborum, maxime nesciunt sapiente animi nisi numquam, consequuntur molestias placeat excepturi quod magnam repudiandae iure enim neque ea est? Ratione ex perspiciatis eius similique natus consectetur ullam magni? Consectetur fuga perferendis inventore fugit voluptas doloribus distinctio incidunt. Nam reiciendis inventore in nisi modi cupiditate minima, placeat quidem doloribus laboriosam ea? Veniam, tempora molestias ratione ea praesentium repellat fuga adipisci, dicta, est sapiente voluptatum officia! Maiores quia cupiditate eligendi ducimus obcaecati maxime, tempore autem cum itaque. Beatae, laborum et? Laborum, doloribus iusto? Nulla ducimus incidunt, eius doloremque expedita itaque nihil laborum minima possimus maiores tempora! Consequatur quisquam sed, nulla modi odit, hic magnam porro minima in optio praesentium, dolorum tempora molestiae ea ex similique quo! Nisi, magnam eaque. Vitae cumque quis nobis ducimus unde saepe, dolores exercitationem consequatur obcaecati quas laboriosam qui maxime vero culpa ipsum dignissimos, suscipit optio! Facilis, quae! Eveniet doloremque fugiat iusto dicta? Cumque corporis veritatis corrupti quisquam minima! Eveniet ad incidunt excepturi accusamus commodi. Dolorem quam voluptates dolorum ipsa amet nesciunt in quasi hic, distinctio nam animi sapiente fuga obcaecati illum impedit molestiae suscipit sint, corporis assumenda. Laudantium, quis earum, perferendis numquam amet molestias repellendus ea possimus sapiente libero perspiciatis voluptatibus hic corrupti temporibus at ipsa? Sapiente laudantium consectetur quam minus eius eum ad repellat cumque cum quidem itaque, provident omnis perspiciatis aspernatur odit architecto dolore vitae sit totam, alias deleniti eaque dolores. Atque consequuntur, earum blanditiis repellat ea facilis tempora quaerat, delectus vel nobis maiores nemo expedita! Velit quo numquam veniam eveniet, placeat optio a laboriosam ab libero, eum ex minus ducimus ipsa atque soluta quidem omnis consequatur perspiciatis consequuntur! Ipsam nemo delectus recusandae aliquid doloremque? Tempora debitis minima, necessitatibus animi quibusdam inventore unde rem fugit tenetur voluptatum? Perferendis officia maxime quis dolore minima accusamus iusto numquam ex nam voluptatem nisi tenetur, a quia, ipsam eius maiores expedita? Dolorum maxime blanditiis delectus quibusdam odio, quisquam similique explicabo error sint placeat autem asperiores quas molestiae eaque corporis quod ex repellendus dolor, iusto qui natus facilis animi atque alias! Enim blanditiis laborum itaque excepturi, atque et. Quas ipsam cupiditate hic expedita recusandae possimus optio similique maxime odio, ab cumque suscipit porro autem corporis fuga eligendi sequi sunt error, ut, ex sit dolorum vel quod pariatur! Recusandae dolorem, aliquam fugit officiis animi incidunt minus. Ratione, incidunt est?</div>
+            </div>
+
+            <div class="border-2 mb-4 border-gray-600 p-4">
+                <h2 class="text-xl font-bold p-2">Visibility: invisible</h2>
+                <div class="container mb-4 p-4 border border-gray-200 shadow-lg rounded-lg">
+                    <div class="grid grid-cols-3 gap-4 ">
+                        <div class="bg-orange-300 rounded-lg p-4">01</div>
+                        <div class="bg-pink-300 rounded-lg p-4 invisible">02</div>
+                        <div class="bg-orange-300 rounded-lg p-4">03</div>
+                    </div>
+                </div>
+
+                <h2 class="text-xl font-bold p-2">Display: hidden</h2>
+                <div class="container p-4 border border-gray-200 shadow-lg rounded-lg">
+                    <div class="grid grid-cols-3 gap-4 ">
+                        <div class="bg-orange-300 rounded-lg p-4">01</div>
+                        <div class="bg-pink-300 rounded-lg p-4 hidden">02</div>
+                        <div class="bg-orange-300 rounded-lg p-4">03</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-2 mb-4 border-gray-600 p-4">
+                <h2 class="text-xl font-bold p-2">Z-index</h2>
+                <div class="container relative p-4 border border-gray-200 shadow-lg rounded-lg w-80 h-24">
+                    <div class="absolute z-40 w-12 bg-violet-400 rounded-lg p-2 m-2 text-end">01</div>
+                    <div class="absolute z-30 w-24 bg-green-300 rounded-lg p-2 m-2 text-end">02</div>
+                    <div class="absolute z-20 w-36 bg-orange-300 rounded-lg p-2 m-2 text-end">03</div>
+                    <div class="absolute z-10 w-48 bg-pink-300 rounded-lg p-2 m-2 text-end">04</div>
+                    <div class="absolute z-1 w-60 bg-teal-400 rounded-lg p-2 m-2 text-end">05</div>
+                </div>
+            </section>
+
+            <div class="border-2 mb-4 border-gray-600 p-4">
+                <h2 class="text-xl font-bold p-2">Object-position</h2>
+                <div class="grid grid-cols-3 gap-4">
+                    <img src="../img/img.jpg" alt="illustration" class="rounded-lg h-56 w-56 object-none object-top">
+                    <img src="../img/img.jpg" alt="illustration" class="rounded-lg h-56 w-56 object-none object-center">
+                    <img src="../img/img.jpg" alt="illustration" class="rounded-lg h-56 w-56 object-none object-bottom">
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

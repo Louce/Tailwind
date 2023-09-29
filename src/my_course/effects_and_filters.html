@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/output.css"/>
+    <title>Tailwind - Effects and Filters</title>
+</head>
+<body class="m-4">
+    <main class="border-2 mb-4 border-gray-600 p-4 mx-auto w-1/2">
+
+        <h1 class="text-xl font-bold p-2">Effects and Filters</h1>
+
+            <h2 class="text-l font-bold p-2">Shadow box</h2>
+            <div class="text-center w-48 p-4 m-4 mx-auto text-black bg-white border rounded-lg shadow-xl">
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button class="px-3 py-2 rounded-lg cursor-pointer bg-violet-300">Say Hello</button>
+            </div>
+
+            <h2 class="text-l font-bold p-2">Drop Shadow</h2>
+            <div class="text-center w-48 p-4 m-4 mx-auto text-black bg-white border rounded-lg shadow drop-shadow-xl">
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button class="px-3 py-2 rounded-lg cursor-pointer bg-violet-300">Say Hello</button>
+            </div>
+
+            <h2 class="text-l font-bold p-2">Shadow color</h2>
+            <div class="text-center w-48 p-4 m-4 mx-auto text-black bg-white border rounded-lg shadow-2xl shadow-orange-300">
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button class="px-3 py-2 rounded-lg cursor-pointer bg-orange-300 shadow-md shadow-orange-300/50">Say Hello</button>
+            </div>
+          
+
+            <h2 class="text-l font-bold p-2">Opacity</h2>
+            <div class="text-center w-48 p-4 mx-auto text-black bg-white border rounded-lg shadow-xl">
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button disabled class="px-3 py-2 rounded-lg cursor-pointer disabled:cursor-auto bg-pink-300 disabled:opacity-50">Say Hello</button>
+            </div>
+
+
+            <h2 class="text-l font-bold p-2">Mix blend mode</h2>
+            <div class="flex w-64 mx-auto mb-4">
+                <div class="w-24 h-24 bg-pink-400 rounded-full"></div>
+                <div class="w-24 h-24 -ml-8 bg-blue-400 rounded-full mix-blend-multiply"></div>
+                <div class="w-24 h-24 -ml-8 bg-yellow-400 rounded-full"></div>
+            </div>
+
+
+            <h2 class="text-l font-bold p-2">Blur</h2>
+            <div class="w-64 p-4 mb-4 mx-auto text-black bg-white border rounded-lg shadow-xl shadow-gray-400 blur-sm hover:blur-none duration-300">
+                <img src="../img/img.jpg" alt="" class="mb-4">
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300">Say Hello</button>
+            </div>
+
+            <h2 class="text-l font-bold p-2">Backdrop-blur (same pour tous les effets ci-dessous)</h2>
+            <div class="w-64 p-4 mb-4 mx-auto text-black bg-white border rounded-lg shadow-xl shadow-gray-400 ">
+                <div class="relative mb-4">
+                    <img src="../img/img.jpg" alt="">
+                    <div class="absolute inset-22 w-32 h-32 backdrop-blur-md bg-white/30 hover:backdrop-blur-none hover:bg-transparent duration-300"></div>
+                </div>
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300">Say Hello</button>
+            </div>
+
+            <h2 class="text-l font-bold p-2">Brigtness</h2>
+            <div class="w-64 p-4 mb-4 mx-auto text-black bg-white border rounded-lg shadow-xl shadow-gray-400 brightness-50 hover:brightness-105 duration-300">
+                <img src="../img/img.jpg" alt="" class="mb-4 ">
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300">Say Hello</button>
+            </div>
+
+            <h2 class="text-l font-bold p-2">Contrast</h2>
+            <div class="w-64 p-4 mb-4 mx-auto text-black bg-white border rounded-lg shadow-xl shadow-gray-400 contrast-50 hover:contrast-100 duration-300">
+                <img src="../img/img.jpg" alt="" class="mb-4 ">
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300">Say Hello</button>
+            </div>
+
+            <h2 class="text-l font-bold p-2">Grayscale</h2>
+            <div class="w-64 p-4 mb-4 mx-auto text-black bg-white border rounded-lg shadow-xl shadow-gray-400 grayscale hover:grayscale-0 duration-300">
+                <img src="../img/img.jpg" alt="" class="mb-4 ">
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300">Say Hello</button>
+            </div>
+
+            <h2 class="text-l font-bold p-2">Hue Rotate</h2>
+            <div class="w-64 p-4 mb-4 mx-auto text-black bg-white border rounded-lg shadow-xl shadow-gray-400 hue-rotate-90 hover:hue-rotate-0 duration-300">
+                <img src="../img/img.jpg" alt="" class="mb-4 ">
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300">Say Hello</button>
+            </div>
+
+            <h2 class="text-l font-bold p-2">Invert</h2>
+            <div class="w-64 p-4 mb-4 mx-auto text-black bg-white border rounded-lg shadow-xl shadow-gray-400 invert hover:invert-0 duration-500">
+                <img src="../img/img.jpg" alt="" class="mb-4 ">
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300">Say Hello</button>
+            </div>
+
+            <h2 class="text-l font-bold p-2">Saturate</h2>
+            <div class="w-64 p-4 mb-4 mx-auto text-black bg-white border rounded-lg shadow-xl shadow-gray-400 saturate-50 hover:saturate-200 duration-300">
+                <img src="../img/img.jpg" alt="" class="mb-4 ">
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300">Say Hello</button>
+            </div>
+
+            <h2 class="text-l font-bold p-2">Sepia</h2>
+            <div class="w-64 p-4 mb-4 mx-auto text-black bg-white border rounded-lg shadow-xl shadow-gray-400 sepia hover:sepia-0 duration-300">
+                <img src="../img/img.jpg" alt="" class="mb-4 ">
+                <h1 class="text-2xl">Hello World</h1>
+                <p class="mb-4">This is my tutoriel</p>
+                <button class="px-3 py-2 rounded-lg cursor-pointer bg-teal-300">Say Hello</button>
+            </div>
+        </main>
+</body>
+</html>

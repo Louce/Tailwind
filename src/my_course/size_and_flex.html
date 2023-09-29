@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/output.css"/>
+        <title>Tailwind - Flexbox and sizes</title>
+    </head>
+    <body class="m-8">
+        <main class="w-1/2 mx-auto">
+            <h1 class="mb-4 font-bold text-3xl">Flexbox and sizes</h1>
+
+            <section class="border-2 mb-4 p-4 border-gray-600">
+                <div class="flex max-w-xl min-h-screen space-x-2">
+                    <div class="w-1/5 rounded-lg bg-teal-400 min-h-screen p-2 font-bold text-white">Sidebar</div>
+                    <div class="w-3/5 rounded-lg bg-pink-300 p-2 text-white font-bold">Main content</div>
+                    <div class="w-1/5 rounded-lg bg-orange-300 p-2 text-white font-bold">Sidebar</div>
+                </div>
+            </section>
+
+            <section class="border-2 mb-4 p-4 border-gray-600">
+                <div class="flex-row space-y-2 parent ">
+                    <div class="p-2 bg-teal-400 rounded-lg">Header</div>
+                    <div class="flex flex-col xxs:space-y-2 md:space-y-0 md:flex-row md:space-x-2 ">
+                        <div class="p-2 md:w-32 bg-pink-300 rounded-lg">Sidebar</div>
+                        <div class="w-full p-2  bg-green-300 rounded-lg">Main content</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="border-2 mb-4 p-4 border-gray-600">
+                <div class="flex-row space-y-2 parent ">
+                    <div class="p-2 bg-teal-400 rounded-lg">Header</div>
+                    <div class="flex flex-col xs:space-y-2 md:space-y-0 md:flex-row md:space-x-2 ">
+                        <div class="p-2 md:w-32 bg-pink-300 rounded-lg">Sidebar</div>
+                        <div class="w-full p-2  bg-green-300 rounded-lg">Main content</div>
+                        <div class="flex-col basis-2/12 bg-orange-300 rounded-lg ">
+                            <div class="p-2 ">Sidebar</div>
+                            <div class="p-2">Menu</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="border-2 p-4 mb-4 border-gray-600 space-y-2">
+                <div class="p-2 bg-orange-300 rounded-lg">Header nowrap</div>
+                <div class="flex flex-col md:flex-row mb-4">
+                    <div class="flex flex-nowrap w-full space-x-2">
+                        <div class="w-full grow bg-violet-400 p-2 rounded-lg">01</div>
+                        <div class="w-full grow bg-violet-400 p-2 rounded-lg">02</div>
+                        <div class="w-full grow bg-violet-400 p-2 rounded-lg">03</div>
+                        <div class="w-full grow bg-violet-400 p-2 rounded-lg">04</div>
+                        <div class="w-full grow bg-violet-400 p-2 rounded-lg">05</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="border-2 p-4 mb-4 border-gray-600 space-y-2">
+                <div class="p-2 bg-orange-300 rounded-lg">Header wrap</div>
+                <div class="flex flex-col md:flex-row">
+                    <div class="flex flex-wrap w-full">
+                        <div class="w-32 mr-2 mb-2 grow bg-violet-400 p-2 rounded-lg">01</div>
+                        <div class="w-32 mr-2 mb-2 grow bg-violet-400 p-2 rounded-lg">02</div>
+                        <div class="w-32 mr-2 mb-2 grow bg-violet-400 p-2 rounded-lg">03</div>
+                        <div class="w-32 mr-2 mb-2 grow bg-violet-400 p-2 rounded-lg">04</div>
+                        <div class="w-32 mr-2 mb-2 grow bg-violet-400 p-2 rounded-lg">05</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="border-2 mb-4 p-4 border-gray-600">
+                <h3 class="text-xl font-bold p-2">Justify-content</h3>
+                <div class="parent">
+                    <div class="p-2 mb-2 bg-teal-400 rounded-lg">Header</div>
+                    <div class="flex justify-evenly items-end space-x-2">
+                        <div class="p-2 bg-pink-300 rounded-lg">Sidebar</div>
+                        <div class="p-2  bg-green-300 rounded-lg">
+                            <h1 class="font-bold">Main content</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, labore? Minus saepe animi labore atque inventore neque, vel rerum consequuntur ea, quisquam officia nulla corrupti fugiat repudiandae qui pariatur sunt?</p>
+                        </div>
+                        <div class="p-2 bg-pink-300 rounded-lg">Sidebar</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="border-2 mb-16 p-4 border-gray-600">
+                <h3 class="text-xl font-bold p-2">Align-items</h3>
+                <div class="parent">
+                    <div class="p-2 mb-2 bg-teal-400 rounded-lg">Header</div>
+                    <div class="flex items-baseline space-x-2 ">
+                        <div class="pt-2 pb-6 w-full text-center font-bold text-white bg-violet-400 p-2 rounded-lg">01</div>
+                        <div class="pt-8 pb-12 w-full text-center font-bold text-white bg-violet-400 p-2 rounded-lg">02</div>
+                        <div class="pt-12 pb-4 w-full text-center font-bold text-white bg-violet-400 p-2 rounded-lg">03</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
