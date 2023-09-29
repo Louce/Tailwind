@@ -14,11 +14,52 @@
   a:hover {
     @apply text-purple-500 transition;
   }
+  input,
+  select {
+    @apply outline-none border border-gray-400 rounded-sm p-1 text-pink-700;
+  }
+  input[type=text] {
+    @apply placeholder:italic;
+  }
+  input[type=text]:focus {
+    @apply outline-teal-500;
+  }
+  input[type=text]:disabled {
+    @apply bg-slate-400/20 border-slate-400/20;
+  }
+  input[type=checkbox] {
+    @apply p-2 mr-1 accent-purple-500;
+  }
+  label {
+    @apply text-sm font-medium text-pink-700;
+  }
+  select {
+    @apply pr-8;
+  }
+  .select {
+    @apply inline-block cursor-pointer border border-gray-400 rounded-lg w-48;
+  }
+  .select .child {
+    @apply p-2 text-teal-400;
+  }
+  .select ul li {
+    @apply border-b border-b-gray-300 p-2;
+  }
+  .select ul li:hover {
+    @apply transition bg-slate-200;
+  }
+  .select ul li:last-child {
+    @apply border-none rounded-b-lg;
+  }
   .btn {
     @apply px-4 py-2 font-semibold text-white rounded-lg;
   }
   .btn:hover {
     @apply transition duration-300 opacity-80;
+  }
+  .btn:disabled {
+    @apply bg-slate-400/30
+                    hover:opacity-100;
   }
   .btn-primary {
     @apply bg-teal-500;
