@@ -3,6 +3,19 @@ module.exports = {
   content: ["./src/components/**/*.{html,js}"],
   content: ["./src/my_course/**/*.{html,js}"],
   content: ["./src/**/*.{html,js}"],
+  mode: 'jit',
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+    ],
+  },
   theme: {
     container: {
       center: true,
@@ -38,6 +51,7 @@ module.exports = {
         2000: '2s',
       },
     },
-    plugins: [],
+    plugins: {
+    },
   },
 };
